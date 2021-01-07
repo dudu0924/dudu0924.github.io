@@ -16,7 +16,7 @@
 <meta property="og:description" content="数据库">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2021-01-07T06:20:27.000Z">
-<meta property="article:modified_time" content="2021-01-07T12:36:02.721Z">
+<meta property="article:modified_time" content="2021-01-07T12:41:58.193Z">
 <meta property="article:author" content="都可溢">
 <meta property="article:tag" content="学习笔记">
 <meta name="twitter:card" content="summary">
@@ -246,33 +246,17 @@
 <li>将文件解压入到自定义的目录下，不建议解压到C盘</li>
 </ol>
 <h6 id="4-配置MySQL"><a href="#4-配置MySQL" class="headerlink" title="4.配置MySQL"></a>4.配置MySQL</h6><ol>
-<li><p>配置my.ini，在根目录下创建文件my.ini，并在文件中输入以下代码</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">[mysqld]</span><br><span class="line">basedir &#x3D;&quot;C:\mysql-8.0.16-winx64&quot;</span><br><span class="line">datadir &#x3D;&quot;C:\mysql-8.0.16-winx64\data&quot;</span><br><span class="line">port&#x3D;3306</span><br><span class="line">server_id &#x3D;10</span><br><span class="line">character-set-server&#x3D;utf8</span><br><span class="line">character_set_filesystem&#x3D;utf8</span><br><span class="line">[client]</span><br><span class="line">port&#x3D;3306</span><br><span class="line">default-character-set&#x3D;utf8</span><br><span class="line">[mysqld_safe]</span><br><span class="line">timezone&#x3D;&quot;CST&quot;</span><br><span class="line">[mysql]</span><br><span class="line">default-character-set&#x3D;utf8</span><br></pre></td></tr></table></figure>
-
-<p>备注：代码中这一部分的文件位置要改为解压文件实际所在的自定义目录位置。</p>
-<p>[mysqld]<br>basedir =”C:\mysql-8.0.16-winx64”<br>datadir =”C:\mysql-8.0.16-winx64\data”</p>
-</li>
-<li><p>配置环境变量， 将mysql/bin加入到PATH中</p>
-</li>
-<li><p>找到cmd.exe，<strong>以管理员身份运行</strong>(确保是管理员)</p>
-</li>
-<li><p>首先将MySQL加入到Windows的服务中，输入命令：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysqld --install;</span><br></pre></td></tr></table></figure>
-
-<p>运行结果：Service successfully installed.</p>
-</li>
-<li><p>开始初始化数据库，输入：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysqld --initialize --user&#x3D;root --console</span><br></pre></td></tr></table></figure>
-
-<p>得到初始密码，<strong>记住初始密码为</strong>：LU_lcP5&lt;ht4B</p>
-</li>
-<li><p>输入：net start mysql，稍后你也可以用net stop mysql关闭MySQL服务</p>
-</li>
-<li><p>然后就可以进入MySQL了，输入：mysql -u root -p，此时会要求你输入密码</p>
-</li>
-<li><p>alter user user() identified by “2021”改初始秘密为2021</p>
-</li>
+<li>配置my.ini，在根目录下创建文件my.ini，并在文件中输入以下代码</li>
 </ol>
+   <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">[mysqld]</span><br><span class="line">basedir &#x3D;&quot;C:\mysql-8.0.16-winx64&quot;</span><br><span class="line">datadir &#x3D;&quot;C:\mysql-8.0.16-winx64\data&quot;</span><br><span class="line">port&#x3D;3306</span><br><span class="line">server_id &#x3D;10</span><br><span class="line">character-set-server&#x3D;utf8</span><br><span class="line">character_set_filesystem&#x3D;utf8</span><br><span class="line">[client]</span><br><span class="line">port&#x3D;3306</span><br><span class="line">default-character-set&#x3D;utf8</span><br><span class="line">[mysqld_safe]</span><br><span class="line">timezone&#x3D;&quot;CST&quot;</span><br><span class="line">[mysql]</span><br><span class="line">default-character-set&#x3D;utf8</span><br></pre></td></tr></table></figure>
+
+<p>   备注：代码中这一部分的文件位置要改为解压文件实际所在的自定义目录位置。<br>   [mysqld]<br>   basedir =”C:\mysql-8.0.16-winx64”<br>   datadir =”C:\mysql-8.0.16-winx64\data”<br>2. 配置环境变量， 将mysql/bin加入到PATH中<br>3. 找到cmd.exe，<strong>以管理员身份运行</strong>(确保是管理员)<br>4. 首先将MySQL加入到Windows的服务中，输入命令：</p>
+   <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysqld --install;</span><br></pre></td></tr></table></figure>
+
+<p>   运行结果：Service successfully installed.<br>5. 开始初始化数据库，输入：</p>
+   <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysqld --initialize --user&#x3D;root --console</span><br></pre></td></tr></table></figure>
+
+<p>   得到初始密码，<strong>记住初始密码为</strong>：LU_lcP5&lt;ht4B<br>6. 输入：net start mysql，稍后你也可以用net stop mysql关闭MySQL服务<br>7.   然后就可以进入MySQL了，输入：mysql -u root -p，此时会要求你输入密码<br>8. alter user user() identified by “2021”改初始秘密为2021</p>
 <h6 id="5-使用MySQL之登录与退出命令"><a href="#5-使用MySQL之登录与退出命令" class="headerlink" title="5.使用MySQL之登录与退出命令"></a>5.使用MySQL之登录与退出命令</h6><ol>
 <li><p>登录MySQL命令：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysql[-h 数据库服务器地址] -u 用户名 -p密码</span><br></pre></td></tr></table></figure>
@@ -675,11 +659,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">随笔</a>
+                <a href="javascript:void(0)" class="js-tag color5">学习笔记</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">学习笔记</a>
+                <a href="javascript:void(0)" class="js-tag color3">随笔</a>
               </li>
             
             <div class="clearfix"></div>
