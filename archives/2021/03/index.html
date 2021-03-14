@@ -6,19 +6,14 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://tidalwavedododone.github.io">
-  <title>MySQL教程笔记 | Wish You Were Here</title>
+  <title>Archives: 2021/3 | Wish You Were Here</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="数据库">
-<meta property="og:type" content="article">
-<meta property="og:title" content="MySQL教程笔记">
-<meta property="og:url" content="https://tidalwavedododone.github.io/2021/01/07/MySQL%E6%95%99%E7%A8%8B%E7%AC%94%E8%AE%B0/index.html">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Wish You Were Here">
+<meta property="og:url" content="https://tidalwavedododone.github.io/archives/2021/03/index.html">
 <meta property="og:site_name" content="Wish You Were Here">
-<meta property="og:description" content="数据库">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2021-01-07T06:20:27.000Z">
-<meta property="article:modified_time" content="2021-01-11T15:50:42.449Z">
 <meta property="article:author" content="都可溢">
-<meta property="article:tag" content="学习笔记">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="Wish You Were Here" type="application/atom+xml">
@@ -179,366 +174,50 @@
           </div>
           <div id="js-content" class="content-ll">
             
-    <i class="fa fa-thumb-tack"></i>
-    <font color=7D26CD>置顶</font>
-    <span class="post-meta-divider">|</span>
   
-<article id="post-MySQL教程笔记" class="article article-type-post " itemscope itemprop="blogPost">
-  <div class="article-inner">
+  
     
-      <header class="article-header">
-        
-  
-    <h1 class="article-title" itemprop="name">
-      MySQL教程笔记
-    </h1>
-  
-
-        
-        <a href="/2021/01/07/MySQL%E6%95%99%E7%A8%8B%E7%AC%94%E8%AE%B0/" class="archive-article-date">
-	<time datetime="2021-01-07T06:20:27.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-01-07</time>
-	
-        <!-- 不蒜子统计 -->
-        <span >
-              <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
-        </span>
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2021" class="archive-year">2021</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-w">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/2021/03/14/idontmissyouatall/" class="archive-article-date">
+	<time datetime="2021-03-14T12:09:54.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-03-14</time>
 	
 
 </a>
-        <!-- 需要添加的位置 -->
-        <!-- 开始添加字数统计-->
-        
-          <div style="margin-top:10px;">
-  <span class="post-time">
-    <span class="post-meta-item-icon">
-      <i class="fa fa-keyboard-o"></i>
-      <span class="post-meta-item-text">  字数统计: </span>
-      <span class="post-count">1.4k字</span>
-    </span>
-  </span>
+        </div>
+    	 
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2021/03/14/idontmissyouatall/">I don&#39;t miss you at all</a>
+    </h1>
+  
 
-  <span class="post-time">
-    &nbsp; | &nbsp;
-    <span class="post-meta-item-icon">
-      <i class="fa fa-hourglass-half"></i>
-      <span class="post-meta-item-text">  阅读时长: </span>
-      <span class="post-count">5分</span>
-    </span>
-  </span>
-</div>
-
-
+        <div class="article-info info-on-right">
           
-        <!-- 添加完成 -->
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="MySQL教程笔记"><a href="#MySQL教程笔记" class="headerlink" title="MySQL教程笔记"></a>MySQL教程笔记</h3><a id="more"></a>
+          
 
-
-<p>[TOC]</p>
-<h6 id="1-数据库概念"><a href="#1-数据库概念" class="headerlink" title="1.数据库概念"></a>1.数据库概念</h6><p><strong>数据库</strong>（Database）是保存数据的仓库，可以方便的把数据放进去，并且把数据根据各种需要取出来，<strong>数据库管理系统</strong>（<strong>DBMS</strong>）是对数据库进行管理（增删改查等）的软件，常用的DBMS有MYSQL等，MYSQL是免费开源的，应用最广泛。不同的DBMS的用法大同小异，掌握了一个也就基本等于掌握了其他DBMS。</p>
-<h6 id="2-认识MySQL"><a href="#2-认识MySQL" class="headerlink" title="2.认识MySQL"></a>2.认识MySQL</h6><p>MySQL是一个<strong>关系型数据库管理系统</strong>，关系数据库将数据保存在不同的表中，而不是将数据放在一个大仓库内，这样可以增加速度并提高灵活性。分为社区版和企业版，我们使用社区版。</p>
-<h6 id="3-安装MySQL8（windows免安装版本）"><a href="#3-安装MySQL8（windows免安装版本）" class="headerlink" title="3.安装MySQL8（windows免安装版本）"></a>3.安装MySQL8（windows免安装版本）</h6><ol>
-<li>访问<a href="https://www.lmonkey.com/，微信登陆，点击猿材料，点击JAVA开发工具，点击mysql8_winx64_免安装版进行下载。" target="_blank" rel="noopener">https://www.lmonkey.com/，微信登陆，点击猿材料，点击JAVA开发工具，点击mysql8_winx64_免安装版进行下载。</a></li>
-<li>将文件解压入到自定义的目录下，不建议解压到C盘</li>
-</ol>
-<h6 id="4-配置MySQL"><a href="#4-配置MySQL" class="headerlink" title="4.配置MySQL"></a>4.配置MySQL</h6><ol>
-<li>配置my.ini，在根目录下创建文件my.ini，并在文件中输入以下代码</li>
-</ol>
-   <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">[mysqld]</span><br><span class="line">basedir &#x3D;&quot;C:\mysql-8.0.16-winx64&quot;</span><br><span class="line">datadir &#x3D;&quot;C:\mysql-8.0.16-winx64\data&quot;</span><br><span class="line">port&#x3D;3306</span><br><span class="line">server_id &#x3D;10</span><br><span class="line">character-set-server&#x3D;utf8</span><br><span class="line">character_set_filesystem&#x3D;utf8</span><br><span class="line">[client]</span><br><span class="line">port&#x3D;3306</span><br><span class="line">default-character-set&#x3D;utf8</span><br><span class="line">[mysqld_safe]</span><br><span class="line">timezone&#x3D;&quot;CST&quot;</span><br><span class="line">[mysql]</span><br><span class="line">default-character-set&#x3D;utf8</span><br></pre></td></tr></table></figure>
-
-<p>   备注：代码中这一部分的文件位置要改为解压文件实际所在的自定义目录位置。<br>   [mysqld]<br>   basedir =”C:\mysql-8.0.16-winx64”<br>   datadir =”C:\mysql-8.0.16-winx64\data”<br>2. 配置环境变量， 将mysql/bin加入到PATH中<br>3. 找到cmd.exe，<strong>以管理员身份运行</strong>(确保是管理员)<br>4. 首先将MySQL加入到Windows的服务中，输入命令：</p>
-   <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysqld --install;</span><br></pre></td></tr></table></figure>
-
-<p>   运行结果：Service successfully installed.<br>5. 开始初始化数据库，输入：</p>
-   <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysqld --initialize --user&#x3D;root --console</span><br></pre></td></tr></table></figure>
-
-<p>   得到初始密码，<strong>记住初始密码为</strong>：LU_lcP5&lt;ht4B<br>6. 输入：net start mysql，稍后你也可以用net stop mysql关闭MySQL服务<br>7.   然后就可以进入MySQL了，输入：mysql -u root -p，此时会要求你输入密码<br>8. alter user user() identified by “2021”改初始秘密为2021</p>
-<h6 id="5-使用MySQL之登录与退出命令"><a href="#5-使用MySQL之登录与退出命令" class="headerlink" title="5.使用MySQL之登录与退出命令"></a>5.使用MySQL之登录与退出命令</h6><ol>
-<li><p>登录MySQL命令：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysql[-h 数据库服务器地址] -u 用户名 -p密码</span><br></pre></td></tr></table></figure>
-
-<p>因为我们数据库在本地，所以可以为</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysql -h localhost -u root -p</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>退出命令：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">quit</span><br><span class="line">exit</span><br><span class="line">\q</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>认识登录成功提示：</p>
-<p>Welcome to the MySQL monitor.(欢迎来到mysql终端）</p>
-<p>Commands end with ; or \g （命令执行符是；或者\g）</p>
-<p>Your MySQL connection id is 18（mysql被链接次数）</p>
-<p>Server version:8.0.16MySQL Community Server -GPL  （mysql的版本）</p>
-<p>Type’help;’ or ‘\h’ for help.（mysql帮助命令）</p>
-<p>Type’\c’ to clear the current input statement（清除等待命令）</p>
-</li>
-</ol>
-<h6 id="6-使用MySQL之常见到的符号"><a href="#6-使用MySQL之常见到的符号" class="headerlink" title="6.使用MySQL之常见到的符号"></a>6.使用MySQL之常见到的符号</h6><ul>
-<li>-&gt;表示当前命令没有命令执行符或者说等待命令执行符来确认</li>
-<li>‘&gt;表示当前的SQL命令缺少单引号</li>
-<li>“&gt;表示当前的SQL命令缺少双引号</li>
-</ul>
-<h6 id="7-使用MySQL之修改MySQL提示符"><a href="#7-使用MySQL之修改MySQL提示符" class="headerlink" title="7.使用MySQL之修改MySQL提示符"></a>7.使用MySQL之修改MySQL提示符</h6><table>
-<thead>
-<tr>
-<th align="center">参数</th>
-<th align="center">描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">\D</td>
-<td align="center">完整的日期</td>
-</tr>
-<tr>
-<td align="center">\d</td>
-<td align="center">当前数据库</td>
-</tr>
-<tr>
-<td align="center">\h</td>
-<td align="center">服务器名称</td>
-</tr>
-<tr>
-<td align="center">\u</td>
-<td align="center">当前用户</td>
-</tr>
-</tbody></table>
-<p>连接客户端时通过参数指定</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysql -u root -p --prompt提示符</span><br></pre></td></tr></table></figure>
-
-<p>连接上客户端后，通过prompt命令修改</p>
-<p>PROMPT提示符</p>
-<p>例如：PROMPT \u@\h\d&gt;当前用户@服务器名称 当前数据库&gt;</p>
-<h6 id="8-使用MySQL之SQL语句介绍及编码规范"><a href="#8-使用MySQL之SQL语句介绍及编码规范" class="headerlink" title="8.使用MySQL之SQL语句介绍及编码规范"></a>8.使用MySQL之SQL语句介绍及编码规范</h6><p>*<em>SQL语句结构化查询语句 *</em>     主要分为四大类</p>
-<table>
-<thead>
-<tr>
-<th><strong>DDL数据库定义语言</strong></th>
-<th>CREATE、DROP、ALTER等</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><strong>DML数据库操纵语言</strong></td>
-<td><strong>INSERT、DELETE、UPDATE等</strong></td>
-</tr>
-<tr>
-<td><strong>DQL数据库查询语言</strong></td>
-<td><strong>SELECT、WHERE等</strong></td>
-</tr>
-<tr>
-<td><strong>DCL数据库控制语言</strong></td>
-<td><strong>GRANT、REVOKE等（了解）</strong></td>
-</tr>
-</tbody></table>
-<p>编码规范：</p>
-<ol>
-<li>关键字与函数名称全部大写</li>
-<li>数据库名称、表名称、字段名称全部小写</li>
-<li>SQL语句必须以分号结尾</li>
-</ol>
-<p>数据库、表、列（字段）都是根据项目的需求来设计的，其操作基本都是增删改查。DDL是对数据库数据表进行操作，DML是对内容进行增删改，DQL是对内容进行查询，DCL是对数据库进行控制。</p>
-<h6 id="9-使用MySQL之认识字符集"><a href="#9-使用MySQL之认识字符集" class="headerlink" title="9.使用MySQL之认识字符集"></a>9.使用MySQL之认识字符集</h6><p>常用中文字符集</p>
-<table>
-<thead>
-<tr>
-<th>GB2312</th>
-<th>双字节编码，早期标准，不推荐使用</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><strong>GBK</strong></td>
-<td><strong>双字节编码，中期标准，不是国标但支持系统很多 而且在GB2312基础上增加了很多偏僻生子。</strong></td>
-</tr>
-<tr>
-<td><strong>UTF-8</strong></td>
-<td><strong>1~4字节的编码，互联网广泛使用，亚洲通用字符集    国际标准化，支持任何语言，在MySQL中写成utf8。</strong></td>
-</tr>
-</tbody></table>
-<p>在MySQL8.0中写成utf8mb3或utf8mb4，3和4表示3个字节和4个字节。</p>
-<p><strong>utf-8与gbk的区别：</strong></p>
-<p>存储长度不一样，GB系统一个汉字占位2个字节，utf-8占位三个字节，推荐使用utf-8（支持语言更多）</p>
-<p><strong>数据库字符集依赖关系：</strong></p>
-<p>内容字符集—&gt;字段字符集—&gt;表字符集—&gt;库字符集</p>
-<p>当内容字符集没有设置时，则内容字符集依赖于字段字符集的设置，同理，字段字符集依赖于表字符集，表字符集依赖于库字符集。</p>
-<h6 id="10-使用MySQL之常用命令及建库语句"><a href="#10-使用MySQL之常用命令及建库语句" class="headerlink" title="10.使用MySQL之常用命令及建库语句"></a>10.使用MySQL之常用命令及建库语句</h6><ol>
-<li>显示当前服务器版本</li>
-<li>显示当前用户</li>
-<li>显示当前日期时间</li>
-<li>建库语句（DDL）：</li>
-<li>显示数据库创建命令（DDL）：</li>
-<li>修改数据库</li>
-<li>删库语句（DDL）</li>
-<li>查看数据库命令</li>
-</ol>
-
-      
-
-      
-        <div class="page-reward">
-          <a href="javascript:;" class="page-reward-btn tooltip-top">
-            <div class="tooltip tooltip-east">
-            <span class="tooltip-item">
-              赏
-            </span>
-            <span class="tooltip-content">
-              <span class="tooltip-text">
-                <span class="tooltip-inner">
-                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
-                  <div class="reward-box">
-                    
-                    
-                  </div>
-                </span>
-              </span>
-            </span>
-          </div>
-          </a>
         </div>
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-        <div class="article-pop-out tagcloud">
-          <i class="icon-tuding"></i>
-          <a class="article-tag-list-link color3">置顶</a>
-        </div>
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">学习笔记</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-
-      
-        
-<div class="share-btn share-icons tooltip-left">
-  <div class="tooltip tooltip-east">
-    <span class="tooltip-item">
-      <a href="javascript:;" class="share-sns share-outer">
-        <i class="icon icon-share"></i>
-      </a>
-    </span>
-    <span class="tooltip-content">
-      <div class="share-wrap">
-        <div class="share-icons">
-          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
-            <i class="icon icon-weibo"></i>
-          </a>
-          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
-            <i class="icon icon-weixin"></i>
-          </a>
-          <a class="qq share-sns" href="javascript:;" data-type="qq">
-            <i class="icon icon-qq"></i>
-          </a>
-          <a class="douban share-sns" href="javascript:;" data-type="douban">
-            <i class="icon icon-douban"></i>
-          </a>
-          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
-            <i class="icon icon-qzone"></i>
-          </a>
-          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
-            <i class="icon icon-facebook"></i>
-          </a>
-          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
-            <i class="icon icon-twitter"></i>
-          </a>
-          <a class="google share-sns" href="javascript:;" data-type="google">
-            <i class="icon icon-google"></i>
-          </a>
-        </div>
-      </div>
-    </span>
-  </div>
-</div>
-
-<div class="page-modal wx-share js-wx-box">
-    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
-    <p>扫一扫，分享到微信</p>
-    <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=https://tidalwavedododone.github.io/2021/01/07/MySQL%E6%95%99%E7%A8%8B%E7%AC%94%E8%AE%B0/" alt="微信分享二维码">
-    </div>
-</div>
-
-<div class="mask js-mask"></div>
-      
-      <div class="clearfix"></div>
-    </div>
+        <div class="clearfix"></div>
+    </header>
   </div>
 </article>
-
-  
-<nav id="article-nav">
-  
-    <a href="/2021/03/14/idontmissyouatall/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          I don&#39;t miss you at all
-        
-      </div>
-    </a>
   
   
-    <a href="/2020/09/15/%E6%99%B4%E5%A4%A9/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">晴天</div>
-      <i class="icon-circle-right"></i>
-    </a>
-  
-</nav>
-
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-        <div class="toc-container tooltip-left">
-            <i class="icon-font icon-category"></i>
-            <div class="tooltip tooltip-east">
-                <span class="tooltip-item">
-                </span>
-                <span class="tooltip-content">
-                    <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#MySQL教程笔记"><span class="toc-number">1.</span> <span class="toc-text">MySQL教程笔记</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#1-数据库概念"><span class="toc-number">1.0.0.1.</span> <span class="toc-text">1.数据库概念</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#2-认识MySQL"><span class="toc-number">1.0.0.2.</span> <span class="toc-text">2.认识MySQL</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#3-安装MySQL8（windows免安装版本）"><span class="toc-number">1.0.0.3.</span> <span class="toc-text">3.安装MySQL8（windows免安装版本）</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#4-配置MySQL"><span class="toc-number">1.0.0.4.</span> <span class="toc-text">4.配置MySQL</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#5-使用MySQL之登录与退出命令"><span class="toc-number">1.0.0.5.</span> <span class="toc-text">5.使用MySQL之登录与退出命令</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#6-使用MySQL之常见到的符号"><span class="toc-number">1.0.0.6.</span> <span class="toc-text">6.使用MySQL之常见到的符号</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#7-使用MySQL之修改MySQL提示符"><span class="toc-number">1.0.0.7.</span> <span class="toc-text">7.使用MySQL之修改MySQL提示符</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#8-使用MySQL之SQL语句介绍及编码规范"><span class="toc-number">1.0.0.8.</span> <span class="toc-text">8.使用MySQL之SQL语句介绍及编码规范</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#9-使用MySQL之认识字符集"><span class="toc-number">1.0.0.9.</span> <span class="toc-text">9.使用MySQL之认识字符集</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#10-使用MySQL之常用命令及建库语句"><span class="toc-number">1.0.0.10.</span> <span class="toc-text">10.使用MySQL之常用命令及建库语句</span></a></li></ol></li></ol></li></ol></li></ol>
-                    </div>
-                </span>
-            </div>
-        </div>
-        
-    </div>
-</aside>
-
-
-
-  
-  
+    </div></section>
   
 
-  
-
-  
-
-  
+    
 
 
           </div>
@@ -596,8 +275,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: true,
-		isArchive: false,
+		isPost: false,
+		isArchive: true,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
